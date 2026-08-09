@@ -1,0 +1,14 @@
+{ "start_date":"",
+    "task_category_dos":{
+        "study":{"min_average":0,"average_type":"hours"},
+        "maths":{"min_average":0, "average_type" : "questions"}
+        },
+    "task_category_donts":{
+        "screen_time_wasted":{"max_average":1,"type":"hours"}
+        },
+    "task_category_miscellaneous":{
+        "sleep":{"target_time":6,"type":"hours"}
+    },
+    "tasks":["task1","task2"]
+    
+    }
