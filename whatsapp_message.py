@@ -4,7 +4,7 @@ import pyautogui
 
 # --- Configuration ---
 START_NUMBER = 362752740  # Change this to your starting number
-DELAY_BETWEEN_NUMBERS = 0  # Pause in seconds after each number
+DELAY_BETWEEN_NUMBERS = 0.5  # Pause in seconds after each number
 COUNTDOWN_BEFORE_SWITCH = 2  # Seconds to prepare before starting
 
 def run_whatsapp_countdown(start_num):
@@ -21,13 +21,14 @@ def run_whatsapp_countdown(start_num):
     time.sleep(1)
 
     # Loop from start_num down to 0
-    for i in range(start_num, -1, -1):
-        # Type the number
-        pyautogui.typewrite(str(i))
-        # Press Enter
-        pyautogui.press('enter')
-        # Wait before the next number
-        time.sleep(DELAY_BETWEEN_NUMBERS)
+    for _ in range(start_num, -1, -1):
+        for char in "JALDI BOL":
+            # Type the number
+            pyautogui.typewrite(char)
+            # Press Enter
+            pyautogui.press('enter')
+            # Wait before the next number
+            time.sleep(DELAY_BETWEEN_NUMBERS)
 
 if __name__ == "__main__":
     # FAIL-SAFE: Move your mouse to any corner of the screen to forcibly stop the script if needed.
