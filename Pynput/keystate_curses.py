@@ -60,7 +60,6 @@ def print_CONTROL_PANEL(stdscr):
         stdscr.refresh()
         index += 1
 
-
 def main(stdscr):
     listener = keyboard.Listener(on_press=on_press,on_release=on_release)
     listener.start()
@@ -68,5 +67,5 @@ def main(stdscr):
     while True:
         print_CONTROL_PANEL(stdscr)
         time.sleep(0.1)
-    
+
 curses.wrapper(main)
