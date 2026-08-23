@@ -27,7 +27,7 @@ def main(stdscr):
     
     x,y = 1,1
     velocity = (1,2)
-    symbol = "@"
+    symbol = "KRISHNA"
     while True:
         # Exit condition
         key = stdscr.getch()
